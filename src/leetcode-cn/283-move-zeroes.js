@@ -4,6 +4,8 @@
  *
  * @param {Array} nums
  * @returns {Array}
+ * @example
+ * [0, 1, 0, 0, 0, 0, 3, 12] => [1, 3, 12, 0, 0, 0, 0, 0]
  */
 function moveZero(nums) {
   let len = nums.length
@@ -27,7 +29,7 @@ function moveZero1(nums) {
   let start = 0
   let end = max - 1
 
-  while(start < end) {
+  while (start < end) {
     const item = nums[start]
     if (item === 0) {
       nums.splice(start, 1)
@@ -43,7 +45,7 @@ function moveZero1(nums) {
 function moveZero2(nums) {
   for (const a of nums) {
     console.log(a);
-    if(a === 0){
+    if (a === 0) {
       nums.splice(nums.indexOf(a), 1)
       nums.push(a)
     }

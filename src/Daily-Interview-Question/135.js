@@ -10,9 +10,9 @@ function sort(str) {
   const len = arr.length
   for (let i = 0; i < len; i++) {
     for (let j = 0; j < len - 1 - i; j++) {
-      if (map[arr[j]] > map[arr[j+1]]) {
-        [arr[j], arr[j+1]] = [arr[j+1], arr[j]]
-      }      
+      if (map[arr[j]] > map[arr[j + 1]]) {
+        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+      }
     }
   }
   console.log(arr.join(''))
