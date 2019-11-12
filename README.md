@@ -6,7 +6,7 @@
 - [mocha](https://www.liaoxuefeng.com/wiki/1022910821149312/1101756368943712)
 - [Nodejs单元测试小结](https://segmentfault.com/a/1190000002921481?utm_source=tag-newest)
 - [测试框架 Mocha 实例教程](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html)
-
+- [mocha-demos](https://github.com/ruanyf/mocha-demos)
 
 
 ```js
@@ -45,4 +45,33 @@ npx  mocha ./test/leetcode-cn/14-longest-common-prefix.test.js
 
 ```
 npx  mocha ./test/leetcode-cn/7-reverse-integer.test.js --reporter mochawesome
+```
+
+### Plugin
+
+- https://www.npmjs.com/package/npm-check-updates
+
+`npm-check-updates` 先更新package.json，再手动npm install
+
+```shell
+# Checking package.json
+npx ncu
+
+# upgrade package.json
+ncu -u
+
+# install new versions
+npm install
+```
+
+`npm-check`
+
+```shell
+npx npm-check
+
+# --update
+npx npm-check -u
+
+# --update-all
+npx npm-check -y
 ```
